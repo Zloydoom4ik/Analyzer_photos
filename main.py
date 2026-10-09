@@ -41,7 +41,7 @@ def main():
     print(f"Точек: {len({i['place'] for i in images})}")
     print(f"Одинаковых файлов в разных точках:        {len(parts['between'])}")
     print(f"Одинаковых файлов внутри одной точки:     {len(parts['within'])}")
-    print(f"Та же картинка в файлах разного размера:  {len(parts['resized'])}")
+    print(f"Та же картинка, но файлы разные:          {len(parts['resized'])}")
     print(f"Похожих кадров (проверить глазами):       {len(parts['similar'])}")
     print(f"Отчёт: {write_report(images, groups, folder, args.similar)}")
 
